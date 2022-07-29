@@ -1,0 +1,1 @@
+{"buildTargets":["build","code-style","composer-install","help","logs","make","prepare","restart","run","ssh-be","start","stop"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
