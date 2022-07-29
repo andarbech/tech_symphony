@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 23:35:46 2022
+# Make data base, printed on Sat Jul 30 01:06:00 2022
 
 # Variables
 
@@ -67,7 +69,7 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.1944
+GNOME_TERMINAL_SERVICE = :1.2889
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -97,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 125376
+VSCODE_PID = 140458
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -129,7 +131,7 @@ UID = 1000
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d98a878a_fc66_4405_8f25_6625eb2e791c
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/031de5c9_2d65_4729_85f6_c3b91b30175c
 # environment
 MAKELEVEL := 0
 # default
@@ -265,9 +267,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 7081573): 19 files, no impossibilities.
+# . (device 2051, inode 7081573): 22 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -276,6 +278,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Files
 
 start:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -287,9 +290,6 @@ start:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Last modified 2022-07-28 23:03:47.772380088
 #  File has been updated.
 #  Successfully updated.
@@ -390,12 +390,12 @@ composer-install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 35 / storage = 293 B / avg = 8 B
-# current buf: size = 8162 B / used = 293 B / count = 35 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 38 / storage = 340 B / avg = 8 B
+# current buf: size = 8162 B / used = 340 B / count = 38 / avg = 8 B
 
-# strcache performance: lookups = 50 / hit rate = 30%
+# strcache performance: lookups = 53 / hit rate = 28%
 # hash-table stats:
-# Load=35/8192=0%, Rehash=0, Collisions=0/50=0%
-# Finished Make data base on Fri Jul 29 23:35:46 2022
+# Load=38/8192=0%, Rehash=0, Collisions=0/53=0%
+# Finished Make data base on Sat Jul 30 01:06:00 2022
 
  

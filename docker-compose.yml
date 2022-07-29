@@ -1,4 +1,4 @@
-version: '3.5'
+version: "3.5"
 
 services:
   clouddistrict-php81-symfony54:
@@ -16,19 +16,19 @@ services:
     environment:
       XDEBUG_CLIENT_HOST: 172.17.0.1
       XDEBUG_CLIENT_PORT: 9003
-    #1000 Local port and 8000 container port 
+    #1000 Local port and 8000 container port
     ports:
-      - '1000:8000'
+      - "1000:8000"
     networks:
       - clouddistrict-php81-symfony54-network
-    depends_on:
-      - clouddistrict-php81-symfony54-mysql
-
-  clouddistrict-php81-symfony54-mysql:
+    # depends_on:
+    #   - clouddistrict-php81-symfony54-mysql
+  database:
+    # clouddistrict-php81-symfony54-mysql:
     container_name: clouddistrict-php81-symfony54-mysql
     image: mysql:8.0.26
     ports:
-      - '3336:3306'
+      - "3336:3306"
     environment:
       MYSQL_DATABASE: mysql_symfony
       MYSQL_ROOT_PASSWORD: root
@@ -36,17 +36,21 @@ services:
       - clouddistrict-php81-symfony54-mysql-data:/var/lib/mysql
     networks:
       - clouddistrict-php81-symfony54-network
-    command: [ 'mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_ci",
+      ]
 
   clouddistrict-php81-symfony54-rabbit:
     container_name: clouddistrict-php81-symfony54-rabbitmq
     image: rabbitmq:3-management-alpine
     ports:
-      - '5672:5672'
-      - '15672:15672'
+      - "5672:5672"
+      - "15672:15672"
     networks:
       - clouddistrict-php81-symfony54-network
-
 networks:
   clouddistrict-php81-symfony54-network:
 
